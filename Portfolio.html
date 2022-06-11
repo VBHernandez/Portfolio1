@@ -1,0 +1,335 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<style>
+		body{
+		background-image: url("starry sky.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 1275px 750px;
+		}
+		
+		#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		font-size: 18px;
+		border: none;
+		outline: none;
+		background-color: black;
+		color: white;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 4px;
+		}
+		
+		.head {
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0, 0.4); 
+		color: white;
+		font-weight: bold;
+		border: 3px solid #f1f1f1;
+		position: fixed;
+		top: 9%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 100%;
+		padding: 3px;
+		text-align: center;
+		}
+		
+		.philosophy {
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0, 0.4); 
+		color: white;
+		font-weight: bold;
+		border: 3px solid #f1f1f1;
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+		}
+		
+		.philosophy1 {
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0, 0.4); 
+		color: white;
+		font-weight: bold;
+		border: 3px solid #f1f1f1;
+		position: absolute;
+		top: 59%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+		}
+		
+		.philosophy2 {
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0, 0.4); 
+		color: white;
+		font-weight: bold;
+		border: 3px solid #f1f1f1;
+		position: absolute;
+		top: 87%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+		}
+		
+		.about {
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0, 0.4); 
+		color: white;
+		font-weight: bold;
+		border: 3px solid #f1f1f1;
+		position: absolute;
+		top: 250%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+		}
+		.bg{
+		width: 100%;
+		filter: blur(8px);
+		}
+		
+		.profile {
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0, 0.4); 
+		color: white;
+		font-weight: bold;
+		border: 3px solid #f1f1f1;
+		position: absolute;
+		top: 360%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+		}
+		.bg{
+		width: 100%;
+		filter: blur(8px);
+		}
+		
+		.gallery{
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0, 0.4); 
+		color: white;
+		float: left;
+		font-weight: bold;
+		border: 3px solid #f1f1f1;
+		position: absolute;
+		top: 460%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+		}
+		
+		.accounts {
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0, 0.4); 
+		color: white;
+		font-weight: bold;
+		border: 3px solid #f1f1f1;
+		position: absolute;
+		top: 560%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+		}
+		
+		.education {
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0, 0.4); 
+		color: white;
+		font-weight: bold;
+		border: 3px solid #f1f1f1;
+		position: absolute;
+		top: 690%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+		}
+		
+		.starry {
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0, 0.4); 
+		color: white;
+		font-weight: bold;
+		border: 3px solid #f1f1f1;
+		position: absolute;
+		top: 790%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+		}
+		
+		.foot {
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0, 0.4); 
+		color: white;
+		font-weight: bold;
+		border: 3px solid #f1f1f1;
+		position: absolute;
+		top: 850%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 100%;
+		padding: 10px;
+		text-align: center;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="Arrow Top.jpg" width="40" height="40"></button>
+	
+	<script>
+	var mybutton = document.getElementById("myBtn");
+
+
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+	} else {
+    mybutton.style.display = "none";
+	}
+	}
+
+	function topFunction() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+	}
+	</script>
+	
+	
+	
+	
+	<div class="head">
+	<h1 style="font-size:35px">Vince Hernandez</h1>
+	</div>
+	
+	
+	<div class="philosophy">
+	<h1 style="font-size:20px">"God is Dead"<br> "Gott ist Tot!"</h1>
+	</div>
+	
+	<div class="philosophy1">
+	<h1 style="font-size:20px"><p>Famous words of a german philosopher<br> Friedrich Nietzsche.
+	(1844-1900) </p></h1>
+	</div>
+	
+	<div class="philosophy2">
+	<h1 style="font-size:20px"><p>He preached that, altough life can be irrational, <br>do not rely on God, but become a man who 
+	can accept fate</p></h1>
+	</div>
+	
+	
+	<div class="about">
+	<h2 style="font-size:25px">About me</h2>
+	<p>Hi! I am Vince B. Hernandez.... They call me Vince but some of my friends call me Koko or 
+	Koko Crunch or Kuya Koko. You can address me whichever you desire but I really like the sound of 
+	Kuya Koko if you are aged below me and by the way I live in Brgy. Labnig Gumaca, Quezon which is a province
+	far away from my school at STI Globalcity. Oh! and my course is Bachelor of Science in Information Technology (BSIT)
+	which I am currently a third year. 
+	<br>Hmmm~~~   from what I can tell you about myself?~ well I am a very extroverted person, I cant approach you
+	unless you approach me, and I can also be very quiete when I am alone, but if you approach me and talk to me
+	I can be very talkative! Welp~! that who I am!.</br>
+	<br>As for my Interests! Before I watch anime but today I only read manga and less watching. And by the way! My
+	recommendation for you to read is "Ao no Flag" which is a romance manga. 
+	<br>As for school~ well~~~~ I am not doing well? I think because of where I am now. well I am in my province right now.
+	in my hometown! i am having a hard time with my internet connection because I have to walk everyday for 30 minutes
+	from my home to where my aunt is living because in my aunts house there is intenet connection unlike in my house. There
+	really is no internet connection there and if I needed to do my works and for my classes, i just have to go at my
+	aunts house. But if we're talking about my homeworks and grades in school! well~~~~ So So Ithink!
+	<br> That's about it about myself! I hope with this, you would be able to undertand me~</p>
+	</div>
+	
+	<div class="profile">
+	<h3 style="font-size:25px">Profile</h3>
+	<h4>Vince Hernandez</h4>
+	<p>Student at STI Globalcity
+	<br>College student, 3rd year BSIT A603
+	<br>Currently working on my skills at prgramming, Html, Css, C#, and Python.</p>
+	</div>
+	<div class="accounts">
+	<h5 style="font-size:25px">Accounts</h5>
+	<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=8c59ead7-d703-4a27-9e55-c96a0054c8d2&redirect_uri=https%3A%2F%2Fmyaccount.microsoft.com&scope=openid+profile+email+offline_access&response_type=code&response_mode=fragment&code_challenge=hSH9b4qAVtCauFAQ4yKDwPEZUVFcOWJAKsXPCJwuSGw&code_challenge_method=S256&state=f1ed8a9c-cc57-44a1-be33-0c6ea632ddd8">Vince Hernandez's Outlook Account</a>
+	<br><a href="https://www.facebook.com/">Facebook Account</a>
+	<br><a href="https://accounts.google.com/signout/chrome/landing?continue=https://accounts.google.com/ServiceLogin?elo%3D1">Gmail Account</a>
+	</div>
+	
+	
+	<div class="gallery">
+	<h6 style="font-size:25px">Certificates of Completion</h6>
+	<a target="_blank" href="SAP Cert.png">
+    <img src="SAP Cert.png" alt="SAP Certificate" width="200" height="200">
+	</a>
+	<div class="desc">SAP Certificate Completion</div>
+	<a target="_blank" href="elementary.jpg">
+    <img src="elementary.jpg" alt="elementay cert" width="200" height="200">
+	</a>
+	<div class="desc">Graduation Certificate</div>
+	</div>
+	
+	
+	<div class="education">
+	<p style="font-size:25px">Education</p>
+	<p>Highschool:<br> Panikihan National Highschool</p>
+	<p>Senior Highschool: General Academic Strand<br> Panikihan National Highschool</p>
+	<p>College: <br>STI Globalcity <br>BSIT</p>
+	</div>
+	
+	<div class="starry">
+	<p style="font-size:25px">Starry Sky <br> Background Source</p>
+	<p><a href="https://www.pexels.com/search/starry%20sky/">Starry Sky</a></p>
+	</div>
+	
+	
+	<div class="foot">
+	<footer style="font-size:25px">Copyright © 2022 Vince Hernandez (Koko Crunch). All Rights Reserved.</footer>
+	</div>
+
+	
+  
+</div>
+</body>
+</html>
